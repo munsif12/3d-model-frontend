@@ -7,13 +7,18 @@ import { BrowserRouter } from 'react-router-dom';
 import "antd/dist/reset.css";
 import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
 
+import { Provider } from 'react-redux';
+import store from './redux';
+
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <React.StrictMode>
+  <Provider store={store}>
     <BrowserRouter>
-      <App />
+      <React.StrictMode>
+        <App />
+      </React.StrictMode>
     </BrowserRouter>
-  </React.StrictMode>
+  </Provider>
 );
 
 // If you want to start measuring performance in your app, pass a function
