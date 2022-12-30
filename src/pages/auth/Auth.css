@@ -1,0 +1,8 @@
+.auth-form-light {
+  position: absolute;
+  min-width: 576px;
+  top: 20%;
+  left: 50%;
+  margin-left: -250px;
+  padding: 0;
+}
